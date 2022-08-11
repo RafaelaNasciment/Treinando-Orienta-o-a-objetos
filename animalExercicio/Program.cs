@@ -10,7 +10,6 @@ namespace animalExercicio
             List<string> listaNomes = new List<string>();
             List<string> listaTipos = new List<string>();
 
-            //Solicitando o dado
             for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine("Informe o nome do seu animal: ");
@@ -26,9 +25,6 @@ namespace animalExercicio
             }
             
             Animal animal = new Animal(listaNomes, listaTipos);
-
-            //Retornando o dado
-            Console.Clear();
 
             Console.WriteLine("\n=====================================================");
 
