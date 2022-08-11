@@ -1,0 +1,8 @@
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\bin\Debug\animalExercicio.exe.config
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\bin\Debug\animalExercicio.exe
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\bin\Debug\animalExercicio.pdb
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\obj\Debug\animalExercicio.csproj.AssemblyReference.cache
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\obj\Debug\animalExercicio.csproj.SuggestedBindingRedirects.cache
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\obj\Debug\animalExercicio.csproj.CoreCompileInputs.cache
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\obj\Debug\animalExercicio.exe
+C:\exercicios\exercicios\animal\animalExercicio\animalExercicio\obj\Debug\animalExercicio.pdb
