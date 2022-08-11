@@ -1,7 +1,7 @@
 # Treinando-Orienta-o-a-objetos
 Resolução do seguinte exercício: 
 
-Crie um algoritmo/programa no qual o usuário deverá informar o nome e o tipo de cinco animais de estimação. 
+Crie um algoritmo/programa no qual o usuário deverá informar o nome e o tipo de cinco animais de estimação. <br>
 O programa deverá exibir na tela para o usuário quantos Cachorros, Gatos e peixes foram informados.
 Regras que deverão ser seguidas para a implementação do algoritmo:
 Os únicos tipos de animais válidos são Cachorro, Gato, Peixe.
