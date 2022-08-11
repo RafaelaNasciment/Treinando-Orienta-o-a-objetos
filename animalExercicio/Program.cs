@@ -30,11 +30,9 @@ namespace animalExercicio
             //Retornando o dado
             Console.Clear();
 
-            animal.NomesAnimais();
-
             Console.WriteLine("\n=====================================================");
 
-            animal.AnimalPorQuantidade();
+            animal.Handle();
 
             Console.WriteLine("\n======================= FIM =========================");
 
