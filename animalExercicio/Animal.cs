@@ -5,70 +5,60 @@ namespace animalExercicio
 {
     public class Animal
     {
+        private readonly TiposAnimais _tiposAnimais;
         public Animal(
             List<string> nome,
             List<string> tipo)
         {
             Nome = nome;
             Tipo = tipo;
+            _tiposAnimais = new TiposAnimais();
         }
 
         private List<string> Nome { get; set; }
 
         private List<string> Tipo { get; set; }
 
-        private List<string> ValidandoTipoAnimal()
-        {
-            TiposAnimais tiposAnimais =  new TiposAnimais();
+        private List<string> TipoAtualizado = new List<string>();      
 
-            List<string> tipoAtualizado = new List<string>();
+        private int gato = 0;
 
+        private int peixe = 0;
 
+        private int cachorro = 0;
+
+        private int ordemNomes = 1;
+
+        public void Handle()
+        {   
             foreach (var tipo in Tipo)
             {
-                if(!(tipo == tiposAnimais.Peixe || tipo == tiposAnimais.Gato || tipo == tiposAnimais.Cachorro))
+                if(!(tipo == _tiposAnimais.Peixe || tipo == _tiposAnimais.Gato || tipo == _tiposAnimais.Cachorro))
                 {
-                    tipoAtualizado.Add(tiposAnimais.Peixe);
+                    TipoAtualizado.Add(_tiposAnimais.Peixe);
                 }
                 else
                 {
-                    tipoAtualizado.Add(tipo);
+                    TipoAtualizado.Add(tipo);
                 }                
             }
 
-            return tipoAtualizado;
-        }
-
-        public void NomesAnimais()
-        {
-            var ordemNomes = 1;
-            foreach(var nomes in Nome)
+            foreach (var nomes in Nome)
             {
                 Console.WriteLine($"O nome do seu {ordemNomes++}º animal é {nomes}");
             }
-        }
 
-        public void AnimalPorQuantidade()
-        {
-            var tiposDeAnimais = ValidandoTipoAnimal();
-
-            TiposAnimais tiposAnimais = new TiposAnimais();
-
-            var gato = 0;
-            var peixe = 0;
-            var cachorro = 0;
-
-            foreach (var tipo in tiposDeAnimais)
+            foreach (var tipo in TipoAtualizado)
             {
-                if(tipo == tiposAnimais.Peixe)
+                if (tipo == _tiposAnimais.Peixe)
                 {
                     peixe++;
                 }
-                if(tipo == tiposAnimais.Gato)
+                if (tipo == _tiposAnimais.Gato)
                 {
                     gato++;
                 }
-                if(tipo == tiposAnimais.Cachorro)
+                if (tipo == _tiposAnimais.Cachorro)
                 {
                     cachorro++;
                 }
@@ -79,6 +69,7 @@ namespace animalExercicio
             Console.WriteLine($"Quantidade Gatos: {gato}");
 
             Console.WriteLine($"Quantidade Cachorros: {cachorro}");
+
         }
     }
 }
